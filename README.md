@@ -2,7 +2,7 @@
 # Wetter App (Weather App)
 
 ## Projektbeschreibung (German)
-Dies entsteht eine einfache Wetter-App, die mit React und Vite erstellt wird. 
+Hier entsteht eine einfache Wetter-App, die mit React und Vite erstellt wird. 
 Sie nutzt die OpenWeather API, um aktuelle Wetterdaten für verschiedene Städte bereitzustellen. 
 Die App ist ein Onepager, in dem die Daten dynamisch geladen werden, ohne dass die Seite neu geladen werden muss.
 
