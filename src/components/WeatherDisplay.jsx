@@ -7,21 +7,24 @@ import '../styles/WeatherDisplay.css';
 
 function WeatherDisplay({ data }) {
     return (
-        <div className="weather-display-grid">
-            <div class="weather-item">
-                <TemperatureDisplay temp={data.main.temp} />
+        <div className="">
+            <div className="city-name">
+                <h2>{data.name}</h2>
             </div>
+            <div className="weather-display-grid">
 
-            <div class="weather-item">
-                <WeatherConditionDisplay description={data.weather[0].description} />
-            </div>
-
-            <div class="weather-item">
-                <WindDisplay speed={data.wind.speed} direction={data.wind.deg} />
-            </div>
-
-            <div class="weather-item">
-                <HumidityDisplay humidity={data.main.humidity} />
+                <div className="weather-item">
+                    <TemperatureDisplay temp={data.main.temp} />
+                </div>
+                <div className="weather-item">
+                    <WeatherConditionDisplay description={data.weather[0].description} />
+                </div>
+                <div className="weather-item">
+                    <WindDisplay speed={data.wind.speed} direction={data.wind.deg} />
+                </div>
+                <div className="weather-item">
+                    <HumidityDisplay humidity={data.main.humidity} />
+                </div>
             </div>
         </div>
     )
